@@ -67,5 +67,13 @@
 
 </body>
 </html>
+"""
 
+# Сохраняем обновлённый HTML-файл
+html_path = Path("/mnt/data/index.html")
+html_path.write_text(html_content, encoding="utf-8")
 
+# Упаковываем в ZIP-архив
+zip_path = Path("/mnt/data/generator_service_new.zip")
+with ZipFile(zip_path, "w") as zipf:
+    zipf.write(html_path, arcname="index.html")
