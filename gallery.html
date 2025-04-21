@@ -3,33 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Фото робіт | Ремонт дизельных генераторів в Одесі</title>
-  <meta name="description" content="Дивіться фото наших робіт з ремонту та обслуговування дизельних генераторів в Одесі. Якість та досвід 20+ років!">
-  <meta name="keywords" content="фото ремонта генераторов Одесса, ремонт дизельных генераторов, галерея работ">
+  <title>Наші роботи | Генераторний Сервіс</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
-</head>    /* Ограничиваем размер фото в галерее */
+  <style>
     .gallery-item {
       position: relative;
       overflow: hidden;
-      border-radius: 0.5rem; /* скругленные углы */
-      aspect-ratio: 4 / 3; /* соотношение сторон для фото */
-      transition: transform 0.3s ease; /* плавный эффект при наведении */
+      border-radius: 0.5rem;
+      aspect-ratio: 4 / 3;
+      transition: transform 0.3s ease;
     }
     .gallery-item:hover {
-      transform: scale(1.05); /* лёгкое увеличение при наведении */
+      transform: scale(1.05);
     }
     .gallery-item img {
       width: 100%;
       height: 100%;
-      object-fit: cover; /* фото заполняет блок, сохраняя пропорции */
+      object-fit: cover;
     }
   </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
   <!-- Header -->
   <header class="bg-blue-900 text-white py-8 text-center shadow">
-<h1 class="text-3xl font-bold">Фото ремонту дизельних генераторів в Одесі</h1>
+    <h1 class="text-3xl font-bold">Генераторний Сервіс</h1>
     <p class="mt-2 text-lg">Наші роботи</p>
     <div class="mt-4">
       <a href="/" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-xl">На головну</a>
@@ -40,7 +38,7 @@
 
   <!-- Gallery -->
   <section class="max-w-6xl mx-auto py-10 px-4">
-  <h2 class="text-2xl font-bold mb-4">Наші роботи з ремонту генераторів в Одесі</h2>
+    <h2 class="text-2xl font-bold mb-4">Наші роботи</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       <!-- Фото 1 -->
       <div class="gallery-item">
@@ -78,15 +76,26 @@
           <img src="/generator6.jpg" alt="Генератор 6">
         </a>
       </div>
+      <!-- Фото 7 (новое) -->
+      <div class="gallery-item">
+        <a href="/generator7.jpg" data-lightbox="gallery" data-title="Генератор 7">
+          <img src="/generator7.jpg" alt="Генератор 7">
+        </a>
+      </div>
+      <!-- Фото 8 (новое) -->
+      <div class="gallery-item">
+        <a href="/generator8.jpg" data-lightbox="gallery" data-title="Генератор 8">
+          <img src="/generator8.jpg" alt="Генератор 8">
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-blue-900 text-white text-center py-6 mt-10">
-  <p>© 2025 Генераторний Сервіс | Максим & Анатолій</p>
-  <p>Працюємо в Одесі (приватний сектор). Телефонуйте: +380639769142</p>
-  <p>Telegram: @Max_Hennessy | Instagram: @max___sokol</p>
-</footer>
+    <p>© 2025 Генераторний Сервіс | Максим & Анатолій</p>
+    <p>Telegram: @Max_Hennessy | Instagram: @max___sokol</p>
+  </footer>
 
   <!-- Lightbox Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
@@ -96,7 +105,7 @@
       'wrapAround': true,
       'showImageNumberLabel': true,
       'alwaysShowNavOnTouchDevices': true,
-      'disableScrolling': true // Отключаем прокрутку страницы при открытом лайтбоксе
+      'disableScrolling': true
     });
   </script>
 </body>
