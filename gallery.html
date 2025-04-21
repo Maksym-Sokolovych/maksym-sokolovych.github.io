@@ -5,11 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Наші роботи | Генераторний Сервіс</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Подключаем Lightbox2 CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+  <style>
+    /* Ограничиваем размер фото в галерее */
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.5rem; /* скругленные углы */
+      aspect-ratio: 4 / 3; /* соотношение сторон для фото */
+      transition: transform 0.3s ease; /* плавный эффект при наведении */
+    }
+    .gallery-item:hover {
+      transform: scale(1.05); /* лёгкое увеличение при наведении */
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* фото заполняет блок, сохраняя пропорции */
+    }
+  </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
-
   <!-- Header -->
   <header class="bg-blue-900 text-white py-8 text-center shadow">
     <h1 class="text-3xl font-bold">Генераторний Сервіс</h1>
@@ -24,41 +40,41 @@
   <!-- Gallery -->
   <section class="max-w-6xl mx-auto py-10 px-4">
     <h2 class="text-2xl font-bold mb-4">Наші роботи</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       <!-- Фото 1 -->
-      <div class="bg-gray-200 h-48 flex items-center justify-center">
+      <div class="gallery-item">
         <a href="/generator1.jpg" data-lightbox="gallery" data-title="Генератор 1">
-          <img src="/generator1.jpg" alt="Генератор 1" class="w-full h-full object-cover rounded-lg">
+          <img src="/generator1.jpg" alt="Генератор 1">
         </a>
       </div>
       <!-- Фото 2 -->
-      <div class="bg-gray-200 h-48 flex items-center justify-center">
+      <div class="gallery-item">
         <a href="/generator2.jpg" data-lightbox="gallery" data-title="Генератор 2">
-          <img src="/generator2.jpg" alt="Генератор 2" class="w-full h-full object-cover rounded-lg">
+          <img src="/generator2.jpg" alt="Генератор 2">
         </a>
       </div>
       <!-- Фото 3 -->
-      <div class="bg-gray-200 h-48 flex items-center justify-center">
+      <div class="gallery-item">
         <a href="/generator3.jpg" data-lightbox="gallery" data-title="Генератор 3">
-          <img src="/generator3.jpg" alt="Генератор 3" class="w-full h-full object-cover rounded-lg">
+          <img src="/generator3.jpg" alt="Генератор 3">
         </a>
       </div>
       <!-- Фото 4 -->
-      <div class="bg-gray-200 h-48 flex items-center justify-center">
+      <div class="gallery-item">
         <a href="/generator4.jpg" data-lightbox="gallery" data-title="Генератор 4">
-          <img src="/generator4.jpg" alt="Генератор 4" class="w-full h-full object-cover rounded-lg">
+          <img src="/generator4.jpg" alt="Генератор 4">
         </a>
       </div>
       <!-- Фото 5 -->
-      <div class="bg-gray-200 h-48 flex items-center justify-center">
+      <div class="gallery-item">
         <a href="/generator5.jpg" data-lightbox="gallery" data-title="Генератор 5">
-          <img src="/generator5.jpg" alt="Генератор 5" class="w-full h-full object-cover rounded-lg">
+          <img src="/generator5.jpg" alt="Генератор 5">
         </a>
       </div>
       <!-- Фото 6 -->
-      <div class="bg-gray-200 h-48 flex items-center justify-center">
+      <div class="gallery-item">
         <a href="/generator6.jpg" data-lightbox="gallery" data-title="Генератор 6">
-          <img src="/generator6.jpg" alt="Генератор 6" class="w-full h-full object-cover rounded-lg">
+          <img src="/generator6.jpg" alt="Генератор 6">
         </a>
       </div>
     </div>
@@ -70,15 +86,15 @@
     <p>Telegram: @Max_Hennessy | Instagram: @max___sokol</p>
   </footer>
 
-  <!-- Подключаем Lightbox2 JS -->
+  <!-- Lightbox Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-  <!-- Настраиваем Lightbox -->
   <script>
     lightbox.option({
       'resizeDuration': 200,
       'wrapAround': true,
       'showImageNumberLabel': true,
-      'alwaysShowNavOnTouchDevices': true
+      'alwaysShowNavOnTouchDevices': true,
+      'disableScrolling': true // Отключаем прокрутку страницы при открытом лайтбоксе
     });
   </script>
 </body>
