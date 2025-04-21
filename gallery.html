@@ -7,6 +7,16 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
   <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    footer {
+      margin-top: auto;
+    }
     .gallery-item {
       position: relative;
       overflow: hidden;
@@ -64,30 +74,6 @@
           <img src="/generator4.jpg" alt="Генератор 4">
         </a>
       </div>
-      <!-- Фото 5 -->
-      <div class="gallery-item">
-        <a href="/generator5.jpg" data-lightbox="gallery" data-title="Генератор 5">
-          <img src="/generator5.jpg" alt="Генератор 5">
-        </a>
-      </div>
-      <!-- Фото 6 -->
-      <div class="gallery-item">
-        <a href="/generator6.jpg" data-lightbox="gallery" data-title="Генератор 6">
-          <img src="/generator6.jpg" alt="Генератор 6">
-        </a>
-      </div>
-      <!-- Фото 7 (новое) -->
-      <div class="gallery-item">
-        <a href="/generator7.jpg" data-lightbox="gallery" data-title="Генератор 7">
-          <img src="/generator7.jpg" alt="Генератор 7">
-        </a>
-      </div>
-      <!-- Фото 8 (новое) -->
-      <div class="gallery-item">
-        <a href="/generator8.jpg" data-lightbox="gallery" data-title="Генератор 8">
-          <img src="/generator8.jpg" alt="Генератор 8">
-        </a>
-      </div>
     </div>
   </section>
 
@@ -101,12 +87,4 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <script>
     lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true,
-      'showImageNumberLabel': true,
-      'alwaysShowNavOnTouchDevices': true,
-      'disableScrolling': true
-    });
-  </script>
-</body>
-</html>
+      'resize
